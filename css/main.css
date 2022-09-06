@@ -16,9 +16,14 @@ html {
 }
 
 a {
-  color: currentColor;
-  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #ffbf00;
+  color: #ffbf00;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   text-decoration: none;
+}
+a.github:hover {
+  box-shadow: inset 100px 0 0 0 #ffbf00;
+  color:#000;
 }
 
 /* 2. Shared */
@@ -58,7 +63,7 @@ a {
 .content {
   display: flex;
   position: relative;
-  min-height: 100vh;
+  min-height: 90vh;
 }
 
 .content_resume {
@@ -195,6 +200,28 @@ a {
   opacity: 1;
   transform: scale(1.1);
 }
+
+
+.projects {
+  background: rgba(0, 0, 0, 0.3);
+  width: 50vw;
+}
+
+th {
+  text-align: center;
+  padding: 15px;
+  border-top: #ffbf00 solid 1px;
+  border-left: black solid 1px;
+  border-right: black solid 1px;
+  border-bottom: #ffbf00 solid 1px;
+  color: #ffbf00;
+}
+
+td {
+  padding: 10px;
+  border: black solid 1px;
+}
+
 
 /* 4. Responsiveness */
 
