@@ -17,7 +17,7 @@ html {
 
 a {
   box-shadow: inset 0 0 0 0 #ffbf00;
-  color: #ffbf00;
+  color: #ffe479;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
   text-decoration: none;
 }
@@ -205,16 +205,22 @@ a.github:hover {
 .projects {
   background: rgba(0, 0, 0, 0.3);
   width: 50vw;
+  color: #fff;
+}
+
+.heading {
+  color: #ffe479;
+  font-weight: bold;
 }
 
 th {
   text-align: center;
   padding: 15px;
-  border-top: #ffbf00 solid 1px;
+  border-top: #ffe479 solid 1px;
   border-left: black solid 1px;
   border-right: black solid 1px;
-  border-bottom: #ffbf00 solid 1px;
-  color: #ffbf00;
+  border-bottom: #ffe479 solid 1px;
+  color: #fff;
 }
 
 td {
