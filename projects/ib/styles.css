@@ -328,12 +328,10 @@ div.legal-text-block {
 
 div.legal-text a {
     color: var(--font);
-    text-decoration: none;
 }
 
 div.legal-text a:hover {
     color: var(--main);
-    border-bottom: 1px solid var(--main);
     animation: upperlink 1s ease-out forwards;
 }
 
