@@ -38,15 +38,17 @@ let legalLinks = document.querySelectorAll('.info-menu'); // NodeList
 let legalTexts = document.querySelectorAll('.legal-text'); // NodeList
 let legalLinksArray = [...legalLinks]; // Array
 let legalTextsArray = [...legalTexts]; // Array
-console.log(legalLinksArray)
-console.log(legalLinksArray.length)
-console.log(legalTextsArray)
-console.log(legalTextsArray.length)
 
-legalLinks.forEach((e) => {
+legalLinksArray.forEach((e) => {
     e.addEventListener('click', ()=> {
         console.log(e);
         legalTextsArray.forEach((e) => e.style.display = 'none');
+        legalLinksArray.forEach((e) => {
+            e.style.fontWeight = 'normal';
+            e.style.color = 'var(--font)';
+        });
         legalTextsArray[legalLinksArray.indexOf(e)].style.display = 'block';
+        legalLinksArray[legalLinksArray.indexOf(e)].style.fontWeight = 'bold';
+        legalLinksArray[legalLinksArray.indexOf(e)].style.color = 'var(--main)';
     })
 })

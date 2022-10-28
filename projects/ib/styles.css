@@ -89,7 +89,7 @@ body {
     align-items: center;
     padding: 0 20px;
     transform: translateY(-100%);
-    animation: nav-move 1s ease-out 1s forwards;
+    animation: nav-move 1s ease-out forwards;
 }
 
 @keyframes nav-move {
@@ -324,6 +324,28 @@ div.legal-text-block {
     display: grid;
     grid-column: 2/4;
     padding: 50px;
+}
+
+div.legal-text a {
+    color: var(--font);
+    text-decoration: none;
+}
+
+div.legal-text a:hover {
+    color: var(--main);
+    border-bottom: 1px solid var(--main);
+    animation: upperlink 1s ease-out forwards;
+}
+
+h4.legal-header {
+    color: var(--main);
+    border-bottom: 1px solid #00000010;
+    padding-block: 10px;
+    margin: 0 0 10px 0;
+}
+
+p.legal-title {
+    font-weight: bold;
 }
 
 #legal-text-2,
