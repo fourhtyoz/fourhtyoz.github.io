@@ -84,8 +84,10 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: var(--white);
+    overflow: auto;
     color: var(--font);
-    height: 10vh;
+    height: clamp(100%, 10vh, 10vh);
+    width: clamp(800px, 100%, 100%);
     align-items: center;
     padding: 0 20px;
     transform: translateY(-100%);
@@ -121,7 +123,8 @@ header {
     display: flex;
     height: 90vh;
     background-image: url(src/header-bg2.jpeg);
-    background-repeat: round;
+    background-repeat: no-repeat;
+    background-size: cover;
     justify-content: center;
     align-items: center;
     color: var(--white);
@@ -204,6 +207,8 @@ header h1 {
     grid-column: span 3;
     display: flex;
     background-image: url(src/work.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     text-align: center;
     align-items: center;
