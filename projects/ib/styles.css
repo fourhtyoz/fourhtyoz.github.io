@@ -84,10 +84,9 @@ body {
     display: flex;
     justify-content: space-between;
     background-color: var(--white);
-    overflow: auto;
     color: var(--font);
     height: clamp(100%, 10vh, 10vh);
-    width: clamp(800px, 100%, 100%);
+    /* width: clamp(800px, 100%, 100%); */
     align-items: center;
     padding: 0 20px;
     transform: translateY(-100%);
