@@ -346,6 +346,17 @@ p.legal-title {
     font-weight: bold;
 }
 
+table.legal-12-table td:first-child {
+    padding: 5px;
+    border-right: 1px solid #00000010;
+    border-bottom: 1px solid #00000010;
+}
+
+table.legal-12-table td:last-child {
+    padding: 5px;
+    border-bottom: 1px solid #00000010;
+}
+
 #legal-text-2,
 #legal-text-3,
 #legal-text-4,
