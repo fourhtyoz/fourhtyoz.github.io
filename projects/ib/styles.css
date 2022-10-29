@@ -111,8 +111,14 @@ body {
     }
 }
 
+/* 
 .nav-bar .ib-title {
     color: var(--main);
+} */
+
+svg.ib-title {
+    height: 2rem;
+    width: 100%;
 }
 
 ul.nav-bar-menu li {
