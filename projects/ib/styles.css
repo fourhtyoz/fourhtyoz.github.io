@@ -97,6 +97,7 @@ body {
     height: clamp(100%, 10vh, 10vh);
     /* width: clamp(800px, 100%, 100%); */
     align-items: center;
+    text-align: end;
     padding: 0 1rem;
     transform: translateY(-100%);
     animation: nav-move 1s ease-out forwards;
