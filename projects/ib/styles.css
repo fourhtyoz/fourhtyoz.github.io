@@ -21,6 +21,17 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 12pt;
+    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+    
+html {
+        font-size: 70%;
+}
+
 }
 
 
@@ -28,9 +39,6 @@ html {
 body {
     background-color: var(--white);
     color: var(--font);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12pt;
-    line-height: 1.6;
 }
 
 
@@ -89,7 +97,7 @@ body {
     height: clamp(100%, 10vh, 10vh);
     /* width: clamp(800px, 100%, 100%); */
     align-items: center;
-    padding: 0 20px;
+    padding: 0 1rem;
     transform: translateY(-100%);
     animation: nav-move 1s ease-out forwards;
 }
@@ -110,7 +118,7 @@ body {
 ul.nav-bar-menu li {
     display: inline;
     float: right;
-    padding: 15px;
+    padding: 1rem;
 }
 
 a.ib-title-link {
@@ -134,15 +142,15 @@ header h1 {
     text-align: center;
     background-color: #00000090;
     width: 100%;
-    padding: 50px;
+    padding: 3rem;
     animation: title-move 1s ease-out 1s forwards;
-    transform: translateY(-20px);
+    transform: translateY(-2rem);
     opacity: 0;
 }
 
 @keyframes title-move {
     0% {
-        transform: translateY(-20px);
+        transform: translateY(-2rem);
         opacity: 0;
     }
     100% {
@@ -156,12 +164,12 @@ header h1 {
     grid-column: span 3;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 20px;
-    margin: 20px 0px 20px 0px;
+    padding: 1rem;
+    margin-block: 1rem;
 }
 
 .feature {
-    padding: 20px;
+    padding: 1rem;
     text-align: justify;
     text-justify: inter-word;
 }
@@ -172,15 +180,15 @@ header h1 {
 
 .feature h2 {
     color: var(--main);
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 }
 
 .ib-details {
     grid-column: span 3;
     display: grid;
     text-align: center;
-    padding: 20px;
-    margin: 0px 0px 20px 0px;
+    padding: 1rem;
+    margin: 0px 0px 1rem 0px;
 }
 
 .ib-details p {
@@ -191,14 +199,14 @@ header h1 {
     grid-column: span 3;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 1rem;
 }
 
 .ib-advantages {
     grid-column: span 3;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 1rem;
 }
 
 .ib-works {
@@ -214,13 +222,13 @@ header h1 {
 .ib-works h2, .ib-works p {
     background-color: #00000090;
     color: var(--white);
-    padding: 20px;
+    padding: 1rem;
 }
 
 /* Clients and images settings */
 .ib-clients {
     grid-column: span 3;
-    padding: 50px 50px 0px 50px;
+    padding: 3rem 3rem 0px 3rem;
     text-align: center;
 }
 
@@ -236,8 +244,8 @@ header h1 {
 }
 
 .img-client {
-    width: 200px;
-    height: 200px;
+    width: 12rem;
+    height: 12rem;
 }
 
 /* Almost footer settings */
@@ -246,11 +254,11 @@ footer {
     background-color: var(--main);
     color: var(--white);
     display: flex;
-    padding: 10px;
+    padding: 1rem;
 }
 
 footer > div {
-    padding-right: 10px;
+    padding-right: 1rem;
 }
 
 /* Links in the nav menu */
@@ -298,7 +306,7 @@ a.lower:hover {
 
 /* Information page */
 div.legal-menu {
-    padding: 50px 50px 50px 30px;
+    padding: 2rem 2rem 2rem 2rem;
     display: grid;
     grid-column: 1;
 }
@@ -309,7 +317,7 @@ div.legal-menu ul {
 
 li.legal-menu {
     border-bottom: 1px solid #00000010;
-    padding-block: 10px;
+    padding-block: 1rem;
 }
 
 a.info-menu {
@@ -326,7 +334,7 @@ a.info-menu:hover {
 div.legal-text-block {
     display: grid;
     grid-column: 2/4;
-    padding: 50px;
+    padding: 2rem;
 }
 
 div.legal-text a {
@@ -341,8 +349,8 @@ div.legal-text a:hover {
 h4.legal-header {
     color: var(--main);
     border-bottom: 1px solid #00000010;
-    padding-block: 10px;
-    margin: 0 0 10px 0;
+    padding-block: 1rem;
+    margin: 0 0 1rem 0;
 }
 
 p.legal-title {
@@ -350,13 +358,13 @@ p.legal-title {
 }
 
 table.legal-12-table td:first-child {
-    padding: 5px;
+    padding: .5rem;
     border-right: 1px solid #00000010;
     border-bottom: 1px solid #00000010;
 }
 
 table.legal-12-table td:last-child {
-    padding: 5px;
+    padding: .5rem;
     border-bottom: 1px solid #00000010;
 }
 
@@ -429,14 +437,14 @@ table.legal-12-table td:last-child {
 
 /* Contacts Page */
 iframe#map {
-    margin: 15px 20px 15px 5px;
+    margin: 1rem 1rem 1rem .3rem;
     height: 80vh;
     width: 70vw;
     border: 1px solid var(--main);
 }
 
 div.contacts {
-    padding: 50px 0 0 20px;
+    padding: 2rem 0 0 1rem;
     width: 20vw;
 }
 
