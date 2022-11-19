@@ -176,6 +176,10 @@ span.highlight, span.dash {
     -moz-text-fill-color: transparent;
 }
 
+a.confident {
+    text-decoration: underline;
+}
+
 /* Animations */
 @keyframes topLinkHover {
     0% {
