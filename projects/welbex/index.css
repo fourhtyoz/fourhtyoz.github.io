@@ -169,9 +169,11 @@ footer {
 
 span.highlight, span.dash {
     background: linear-gradient(90deg, #FFBF2E, #FE5A1C);
-    background-clip: text;
     font-weight: bold;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 /* Animations */
